@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let ranking = Number(prompt('등수를 입력하세요 : ', '예 : 1'))
+        switch (ranking % 10){
+            case 1 :
+                alert(`${ranking}등 이군요, 상품은 '사과', '배', '수박' 입니다.`)
+                break
+            case 2 :
+                alert(`${ranking}등 이군요, 상품은 '배', '수박' 입니다.`)
+                break
+            case 3 :
+                alert(`${ranking}등 이군요, 상품은 '수박' 입니다.`)
+                break
+            default :
+                alert(`아쉽습니다! ${ranking}등 으로 등수에 들지 못했습니다.`)
+
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

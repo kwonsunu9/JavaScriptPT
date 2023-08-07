@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var value = 0;
+        var startTime = new Date( ).getTime( ); // new Date() -> Date 객체를 생성
+        while( new Date( ).getTime( ) < startTime + 1000) { // getTime()함수는 1973.01.01 이후 함수가 실행될 때 까지의 경과 시간을 밀리초 단위로 알려줌.
+            value ++
+        }
+        alert(value);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var rank = Number( prompt('등수 입력 : ', '숫자') );
+        const giveway = [ '사과, 배, 수박', '배, 수박', '수박', '등수에 들지 못했습니다.'];
+        if( rank > 3 ) {
+            var rank = 4
+        }
+        alert( giveway[rank-1] );
+    </script> 
+</head>
+<body>
+        
+</body>
+</html>
