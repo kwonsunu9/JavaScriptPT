@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function earn(name, wage = 9860, hour = 160){
+            console.log(`# ${name}님의 급여명세서 입니다.`)
+            console.log(`시급 : 1시간에 ${wage}`)
+            console.log(`근무 시간 : 한 달 동안 ${hour} 시간 일했으며`)
+            console.log(`연봉 : 1년 예상 연봉은 ${wage*hour*12}이며`)
+            console.log(`실 수령액 : 10%를 공제한 ${wage*hour*12-(wage*hour*12*0.1)}원 입니다.`)
+        }
+        earn('홍길동')
+        earn('둘리', 1.78**4)
+        earn('루이', '10500', '200')
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

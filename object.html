@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let product = {
+        name : 'MicroSoft Visual Studio 2015 Ultimate',
+        price : '1,500,000원',
+        language : '한국어',
+        supportOS : 'Win32/64',
+        subscription : true
+        };
+        var output = '';
+        for( var key in product ) {
+        output += key + ':' + product[key] + '\n';
+        }
+        console.log(output)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

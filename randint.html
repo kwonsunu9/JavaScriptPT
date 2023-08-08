@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var N = 5;
+        var number = Array(N);
+        for( var i = 0; i<N; i++) {
+            number[i] = Math.floor( (Math.random( ) * 9 ) + 1 );
+        }
+        alert(number)
+        alert( `${number} 중에서 최소 값은 ${ number.sort( )[0] }이다` );
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

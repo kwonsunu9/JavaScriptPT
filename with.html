@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var regist = {
+            이름 : '유사장',
+            성별 : 'male',
+            생년월일 : 20001231,
+            adress : '대한민국 서울특별시 관악구 보라매동',
+            신용 : 80, 월급 : 200, 구독 : 15, 세금 : 50
+        };
+        var idcard = ""
+        with(regist){
+            idcard += '이름 : ' + 이름 +'\n';
+            idcard += '성별 : ' + 성별 +'\n';
+            idcard += '생년월일 : ' + 생년월일 +'\n';
+            idcard += '주소 : ' + adress +'\n';
+            idcard += '잔여 금액 : ' + (월급-신용-구독-세금) + '만원입니다.';
+        }
+        alert(idcard)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

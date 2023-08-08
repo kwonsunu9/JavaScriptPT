@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sumAll() {
+            alert( typeof(arguments) + '의 길이:' + arguments.length)
+            }
+            sumAll(1, 2, 3)            
+    </script>        
+</head>
+<body>
+    
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sumAll() {
+            let output = 0
+            for( let idx = 0; idx < arguments.length;idx++){
+                output += arguments[idx]
+            }
+            return output
+        }
+        alert( sumAll(1, 2, 3) )        
+    </script>        
+</head>
+<body>
+    
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sumAll() {
+            let output = 0
+            for( let eachElement of arguments){
+                output += eachElement
+            }
+            return output
+        }
+        alert( sumAll(1, 2, 3) )                     
+    </script>        
+</head>
+<body>
+    
+</body>
+</html>
