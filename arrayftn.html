@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function min(array){
+            let arr = array[0]
+            for (let idx in array){
+                if (arr > array[idx]){
+                    arr = array[idx]
+                }
+            }
+            return arr
+        }
+
+        const testArray1 = [52, 273, 32, 103, 275, 24, 57]
+        console.log(`${testArray1} 중에서`)
+        console.log(`최솟값은 ${min(testArray1)}입니다.`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function min(array){
+            let arr = array[0]
+            for (let idx of array){
+                if (arr > idx){
+                    arr = idx
+                }
+            }
+            return arr
+        }
+
+        const testArray2 = [52, 273, 32, 103, 275, 24, 57]
+        console.log(`${testArray2} 중에서`)
+        console.log(`최솟값은 ${min(testArray2)}입니다.`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function min(array){
+            let arr = array[0]
+            for (let idx = 1; idx < array.length; idx ++){
+                if (arr > array[idx]){
+                    arr = array[idx]
+                }
+            }
+            return arr
+        }
+
+        const testArray3 = [52, 273, 32, 103, 275, 24, 57]
+        console.log(`${testArray3} 중에서`)
+        console.log(`최솟값은 ${min(testArray3)}입니다.`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
