@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let input = `
+        일자, 달러, 엔, 유로
+        02, 1141.8, 1097.46, 1262.37
+        03, 1148.7, 1111.36, 1274.65
+        04, 1140.6, 1107.81, 1266.58
+        `
+
+        var line = input.trim().split('\n').map(function(value){
+            return value.trim().split(', ')
+        })
+        console.log(line);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

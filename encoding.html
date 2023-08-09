@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var URl = 'http://hanbit.co.kr?test=한글입니다.';
+        var out = '';
+
+        out += 'escape()\n';
+        out += escape(URl);
+
+        var out_one = '';
+
+        out_one += 'encodeURl()\n';
+        out_one += encodeURI(URl);
+
+        var out_two = '';
+
+        out_two += 'encodeURlComponent()\n';
+        out_two += encodeURIComponent(URl);
+
+        alert(out);
+        alert(out_one);
+        alert(out_two);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

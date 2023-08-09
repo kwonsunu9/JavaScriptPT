@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var power_me = (a, b) => {
+            if(!b){
+                return a**2
+            }else{
+                return a**b
+            }
+        }
+        alert(power_me(2))
+        alert(power_me(4, 4))
+        var power_ans = function( ) {
+            switch (arguments.length) {
+                case 1 : return arguments[0] ** arguments[0];
+                case 2 : return Math.pow( arguments[0], arguments[1] );
+                default : return '매개 변수 개수 에러!';
+            }
+        };
+        alert( power_ans(2) );
+        alert( power_ans(4, 4) );
+        alert( power_ans( ) );
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
