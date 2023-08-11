@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            document.getElementById('header').onclick = function(e){
+                let event = e || window.event
+                document.body.innerHTML = ''
+                for(var key in event) {
+                    document.body.innerHTML += `<p>${key} : ` + event[key] + '</p>'
+                }
+            } 
+        })
+    </script>
+</head>
+<body>
+<h1 id="header">Click</h1>
+</body>
+</html>

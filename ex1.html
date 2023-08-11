@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Index</title>
+    <script>
+        window.onload = function(){
+            let id_1 = document.getElementById('id_1')
+            id_1.onclick = function(){
+                id_2.innerHTML = "Here"
+            }
+            let id_2 = document.getElementById('id_2')
+            id_2.onclick = function(){
+                id_1.innerHTML = "There"
+            }
+            let back = document.getElementById('back')
+            back.onclick = function(){
+                id_1.innerHTML = "Here"
+                id_2.innerHTML = "There" 
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 id = 'id_1'> Here </h1>
+    <h1 id = 'id_2'> There </h1>
+    <h1 id = 'back'> Back </h1>
+</body>
+</html>

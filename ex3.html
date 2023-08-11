@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Index</title>
+    <script>
+        window.onload = function(){
+            let buttonA = document.getElementById('button-A')
+            let buttonB = document.getElementById('button-B')
+            let controlA = document.getElementById('control-A')
+            let controlB = document.getElementById('control-B')
+            buttonA.onclick = function(){
+                controlA.innerHTML = Number(controlA.innerHTML) +1
+            }
+            buttonB.onclick = function(){
+                controlB.innerHTML = Number(controlB.innerHTML)+1
+                controlA.innerHTML = Number(controlA.innerHTML)+1
+            }
+        }
+    </script>
+</head>
+<body>
+    <button id = 'button-A'>Button A</button>
+    <h1>Button A - <span id = 'control-A'>0</span></h1>
+    <button id = 'button-B'>Button B</button>
+    <h1>Button B - <span id = 'control-B'>0</span></h1>
+</body>
+</html>
