@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let output ='';
+        for (let key in location){
+            output += '* '+key+':'+location[key]+'\n';
+        }
+        alert(output)
+        location = 'http://naver.com';
+    </script>
+    <script>
+        var child = window.open('','','width = 1023, height = 768');
+        child.location = 'http://naver.com'
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

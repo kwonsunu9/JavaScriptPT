@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var students = Array();
+        students.push({이름 : '윤인성', 국어 : 87, 수학 : 98, 영어 : 88, 과학 :95});
+        students.push({이름 : '연하진', 국어 : 92, 수학 : 98, 영어 : 96, 과학 :98});
+        students.push({이름 : '구지연', 국어 : 76, 수학 : 80, 영어 : 44, 과학 :66});
+        students.push({이름 : '구숙정', 국어 : 78, 수학 : 80, 영어 : 92, 과학 :69});
+        
+        for(var i in students){
+            students[i].getSum = function(){
+                return this.국어 + this.수학 + this.영어 + this.과학;
+            };
+            
+            students[i].getAverage = function(){
+                return this.getSum()/4;
+            };
+        };
+        
+        max_score = 0, name = ""
+        row_mean = 100, name2 = ""
+        var grade = '이름\t총점\t평균\n';
+        for (var i in students){
+            with(students[i]){
+                grade += 이름 + '\t' + getSum() + '\t' + getAverage() + '\n'
+                if (max_score < getSum()){
+                    name = 이름;
+                    max_score = getSum();
+                }
+                if (row_mean > getAverage()){
+                    name2 = 이름;
+                    row_mean = getAverage()
+                }
+            }
+        }
+        alert(grade)
+        alert(`이번 학기 총점 1등은 ${name}이며 총점은 ${max_score}점 입니다.`)
+        alert(`이번 학기 평균이 가장 낮은 학생은 ${name2}이며 1등과 평균의 차이는 ${(max_score/4)-row_mean}점 입니다.`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
